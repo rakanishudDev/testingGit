@@ -7,7 +7,8 @@
   <body>
     <p>This is my page</p>
     <script>
-     let promise = fetch('coffee.jpg').then(function(response) {
+     let promise = fetch('coffee.jpg');
+     promise.then(function(response) {
        return response.blob();
      });
      
