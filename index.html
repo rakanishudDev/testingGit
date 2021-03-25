@@ -16,7 +16,7 @@
      }).then(function(myBlob) {
        let objectURL = URL.createObjectURL(myBlob);
        let image = document.createElement('img');
-       image.src = objecRL;
+       image.src = objectURL;
        document.body.appendChild(image);
      }).catch(function(e) {
        console.log('Problem has been detected in promises while fetching files from server!');
