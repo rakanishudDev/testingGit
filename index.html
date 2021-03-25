@@ -14,7 +14,9 @@
          return response.blob();
        }
      }).then(function(myBlob) {
-       let objectURL =
+       let objectURL = URL.createObjectURL(myBlob);
+       let image = document.createElement('img');
+       image.src = objectURL;
        document.body.appendChild(image);
      });
      
