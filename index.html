@@ -7,7 +7,7 @@
   <body>
     <p>This is my page</p>
     <script>
-     let promise = fetch('coffeffe.jpg').then(function(response) {
+     let promise = fetch('coffee.jpg').then(function(response) {
        if (!response.ok) {
          throw new Error(`HTTP error, status: ${response.status}`); 
        } else {
@@ -16,7 +16,7 @@
      }).then(function(myBlob) {
        let objectURL = URL.createObjectURL(myBlob);
        let image = document.createElement('img');
-       image.src = objectURL;
+       image.src = objecRL;
        document.body.appendChild(image);
      }).then(function(e) {
        console.log('Problem has been detected in promises while fetching files from server!');
