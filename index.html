@@ -18,7 +18,7 @@
        let image = document.createElement('img');
        image.src = objecRL;
        document.body.appendChild(image);
-     }).then(function(e) {
+     }).catch(function(e) {
        console.log('Problem has been detected in promises while fetching files from server!');
      });
      
