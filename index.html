@@ -7,10 +7,10 @@
   <body>
     <p>This is my page</p>
     <script>
-     let promise = fetch('coffee.jpg');
-     promise.then(function(response) {
+     let promise = fetch('coffee.jpg').then(function(response) {
        return response.blob();
      });
+     
      let promise2 = promise.then(function(response) {
        if (!response.ok) {
          throw new Error(`HTTP error! status: ${response.status}`);
